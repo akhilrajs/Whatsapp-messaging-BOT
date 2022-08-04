@@ -4,10 +4,12 @@ A bot based on python compiled to a executable file for all Windows systems to s
 # Steps to use 
 
 - host the message in a text file in GitHub
-![1](https://user-images.githubusercontent.com/67222042/182763814-41d8b421-6113-45bc-85e6-3b201e66030c.png)
+![6](https://user-images.githubusercontent.com/67222042/182764914-63ecf581-0db2-44e4-b01c-33bdc22af10b.png)
+
 
 - Copy the url for the raw data
-![2](https://user-images.githubusercontent.com/67222042/182763900-d9072fed-205e-47e3-a3f7-ef4c4a755f17.png)
+![7](https://user-images.githubusercontent.com/67222042/182764969-7bd82c15-e69f-4df4-8760-8dbcecfdab37.png)
+
 
 - open the Folder
 ![3](https://user-images.githubusercontent.com/67222042/182763987-fffd56d9-65d1-4435-ae38-33cc28389e51.png)
