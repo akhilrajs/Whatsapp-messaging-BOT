@@ -10,7 +10,7 @@ from urllib.parse import quote
 from os import system
 from os import environ
 from prettytable import PrettyTable
-
+from telepot import Bot
 
 
 system("")
@@ -46,7 +46,7 @@ try :
 	message = data.text
 except Exception as e:
 	print(style.RED + "[#] ERROR --> " + str(e) )
-	print(style.RED + "[#] connect to the internet and try again ") 
+	print(style.RED + "[#] connect to the internet and try again " + style.RESET) 
 	exit()
 
 
@@ -93,8 +93,21 @@ options.add_argument("--user-data-dir=C:\\User\\Data\\Default")
 driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=options)
 print('Once your browser opens up sign in to web whatsapp')
 driver.get('https://web.whatsapp.com')
-menu = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]")))
-fail = []
+try:
+	menu = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]")))
+except Exception as e:
+	try:
+		print("[#] ERROR : " + e)
+		print("[#] failed to detect whatsapp login")
+		print("[#] trying again")
+		menu = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div/div[3]/div/header/div[2]/div/span/div[3]")))
+	except Exception as e:
+		print("[#] an error has occured. make sure the system is connected to the internet")
+		print(e)
+		print("[#] END PROGRAM")
+		sleep(5)
+		exit()
+fail_ = []
 for idx, number in enumerate(numbers):
 	number = number.strip()
 	if number == "":
@@ -115,10 +128,10 @@ for idx, number in enumerate(numbers):
 				try:
 					click_btn = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button/span")))
 				except Exception as e:
-					print(style.RED + f"\nFailed to send message to: {number}, retry ({i+1}/3)")
+					print(style.RED + f"\nFailed to send message to: {number}, retry ({i+1}/3)" + style.RESET)
 					print("Make sure your phone and computer is connected to the internet.")
 					print("If there is an alert, please dismiss it." + style.RESET)
-					fail.append(number)
+					fail_.append(number)
 				else:
 					sleep(1)
 					click_btn.click()
@@ -127,9 +140,24 @@ for idx, number in enumerate(numbers):
 					print(style.GREEN + 'Message sent to: ' + number + " " + names[idx].title() + style.RESET)
 	except Exception as e:
 		print(style.RED + 'Failed to send message to ' + number + str(e) + style.RESET)
-		fail.append(number)
+		fail_.append(number)
 print("Failed to send to : " + '\n' )
-for n in fail:
-	print(n)
+fail = []
+for i in fail_:
+	if i in fail:
+		i = ""
+	else:
+		fail.append(i)
+name_failed =[]
+for number in fail : 
+	idx = numbers.index(number)
+	name = names[idx]
+	name_failed.append(name)
+x = PrettyTable()
+for n in name_failed:
+	idx_n = name_failed.index(n)
+	num = fail[idx_n]
+	x.add_row([n,num])
+print(x)
 sleep(10)
 driver.close()
