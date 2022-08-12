@@ -11,7 +11,6 @@ from os import system
 from os import environ
 from prettytable import PrettyTable
 from telepot import Bot
-from XPATH as xpath
 
 
 system("")
@@ -45,6 +44,27 @@ try :
 	url = msg_url
 	data = requests.get(url)
 	message = data.text
+except Exception as e:
+	print(style.RED + "[#] ERROR --> " + str(e) )
+	print(style.RED + "[#] connect to the internet and try again " + style.RESET) 
+	exit()
+
+
+print(style.GREEN + "[#] downloading xpaths" + style.RESET)
+sleep(0.8)
+try :
+	url = "https://raw.githubusercontent.com/akhilrajs/Whatsapp-messaging-BOT/main/xpath/click_btn.txt"
+	data = requests.get(url)
+	click_btn_xpath = data.text
+except Exception as e:
+	print(style.RED + "[#] ERROR --> " + str(e) )
+	print(style.RED + "[#] connect to the internet and try again " + style.RESET) 
+	exit()
+
+try :
+	url = "https://raw.githubusercontent.com/akhilrajs/Whatsapp-messaging-BOT/main/xpath/menu.txt"
+	data = requests.get(url)
+	menu_xpath = data.text
 except Exception as e:
 	print(style.RED + "[#] ERROR --> " + str(e) )
 	print(style.RED + "[#] connect to the internet and try again " + style.RESET) 
@@ -95,16 +115,16 @@ driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=options
 print('Once your browser opens up sign in to web whatsapp')
 driver.get('https://web.whatsapp.com')
 try:
-	menu = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, xpath.menu_btn)))
+	menu = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, menu_xpath)))
 except Exception as e:
 	try:
 		print("[#] ERROR : " + e)
 		print("[#] failed to detect whatsapp login")
 		print("[#] trying again")
-		menu = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, xpath.menu_btn)))
+		menu = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, menu_xpath)))
 	except Exception as e:
 		print("[#] an error has occured. make sure the system is connected to the internet")
-		print(e)
+		print(str(e))
 		print("[#] END PROGRAM")
 		sleep(5)
 		exit()
@@ -127,7 +147,7 @@ for idx, number in enumerate(numbers):
 			if not sent:
 				driver.get(url)
 				try:
-					click_btn = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, xpath.click_btn)))
+					click_btn = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((By.XPATH, click_btn_xpath)))
 				except Exception as e:
 					print(style.RED + f"\nFailed to send message to: {number}, retry ({i+1}/3)" + style.RESET)
 					print("Make sure your phone and computer is connected to the internet.")
