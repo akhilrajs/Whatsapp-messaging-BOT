@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/akhilrajs/postings_data/main/test.txt
+https://raw.githubusercontent.com/akhilrajs/Whatsapp-messaging-BOT/main/message.txt
