@@ -1,0 +1,2 @@
+this is a sample message
+make a repository and make a txt file containing your message and copy the link of the raw data to msg_url.txt
