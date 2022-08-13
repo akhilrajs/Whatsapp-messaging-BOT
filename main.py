@@ -10,7 +10,9 @@ from urllib.parse import quote
 from os import system
 from os import environ
 from prettytable import PrettyTable
-from telepot import Bot
+
+
+
 
 
 system("")
@@ -107,6 +109,7 @@ if 12 < currentTime < 18 :
 if currentTime > 18 :
      greet = "Good Evening "
 
+country_code = input("Enter your country code(example for india : +91) : ")
 options = Options()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 options.add_argument("--profile-directory=Default")
@@ -140,7 +143,7 @@ for idx, number in enumerate(numbers):
 		msg = greet + str(names[idx]).title() + '''
 		 
 		''' + str(message)
-		url = 'https://web.whatsapp.com/send?phone=+91' + number + '&text=' + msg
+		url = 'https://web.whatsapp.com/send?phone='+ country_code + number + '&text=' + msg
 		sleep(2)
 		sent = False
 		for i in range(3):
@@ -179,6 +182,8 @@ for n in name_failed:
 	idx_n = name_failed.index(n)
 	num = fail[idx_n]
 	x.add_row([n,num])
+
 print(x)
+print("[#] closing program in 10 seconds")
 sleep(10)
 driver.close()
