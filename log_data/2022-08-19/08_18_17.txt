@@ -1,0 +1,33 @@
+[#] time : 08_18_17
+[#] reading msg_url file 
+[#] downloading message from GITHUB 
+[#] message downloaded 
+[#] downloading xpaths 
+[#] xpath for click_btn created 
+[#] downloaded xpath for menu 
+[#] printing message 
+[#] message : 
+
+[#] reading numbers from numbers.txt 
+[#] numbers loaded from numbers.txt 
+[#] numbers loaded from numbers.txt 
+[#] reading names from names.txt 
+[#] names loaded from names.txt 
+[#] names loaded from names.txt 
+[#] total numbers loaded : 2 
+[#] greet : Good Morning  
+[#] accepting country code 
+[#] country code : +91 accepted 
+[#] loading options for Google Chrome 
+[#] opening Google Chrome 
+[#] logging into Whatsapp 
+[#] logged in 
+[#] sending message to : 
+[#] message sent to :  
+[#] sending message to :  
+[#] message sent to :  
+++
+||
+++
+++
+[#] END PROGRAM 
