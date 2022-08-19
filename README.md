@@ -3,8 +3,10 @@ A bot based on python compiled to a executable file for all Windows systems to s
 
 Supports :
 1) **Google Chrome**
-2) **Modzilla Firefox**
+2) **Mozilla Firefox**
 3) **MIcrosoft Edge**
+
+creates a log file for every run according to date and time .
 
 # Steps to use 
 
