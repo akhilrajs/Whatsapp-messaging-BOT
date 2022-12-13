@@ -3,9 +3,9 @@
 Cases for Tomorrow 
 
 *OP* case presentation
-Presenter : *GOKUL RAJ*
-Case : *Acute Respiratory Infections*
+Presenter : *ELDHO KURIAKOSE*
+Case : *Acute Glomerulonephritis*
 
 *Ward* case presentation
-Presenter : *GOWRI*
-Case : *Acute Glomerulonephritis*
+Presenter : *AARTHY V S*
+Case : *Nephrotic Syndrome*
