@@ -3,9 +3,9 @@
 Cases for Tomorrow 
 
 *OP* case presentation
-Presenter : *GIRIPRASANNA*
-Case : *Acute Diarrhoeal Disease*
+Presenter : *GOKUL K*
+Case : *Cerebral Palsy*
 
 *Ward* case presentation
-Presenter : *HEMA*
-Case : *Acute Respiratory Disease*
+Presenter : *HARINI*
+Case : *Acute Diarrheal Disease*
