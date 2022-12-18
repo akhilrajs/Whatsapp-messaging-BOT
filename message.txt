@@ -3,9 +3,9 @@
 Cases for Tomorrow 
 
 *OP* case presentation
-Presenter : *GOKUL K*
-Case : *Cerebral Palsy*
+Presenter : *ELAKIYA*
+Case : *Fever with hepatosplenomegaly*
 
 *Ward* case presentation
-Presenter : *HARINI*
-Case : *Acute Diarrheal Disease*
+Presenter : *HARIHARAN*
+Case : *Acute Respiratory Disease*
