@@ -3,9 +3,9 @@
 Cases for Tomorrow 
 
 *OP* case presentation
-Presenter : *GOWRI*
-Case : *Cerebral Palsy*
+Presenter : *GUNOTHAM RAJ*
+Case : *Acute Respiratory Infections*
 
 *Ward* case presentation
-Presenter : *GUNOTHAM RAJ*
-Case : *Fever with hepatosplenomegaly*
+Presenter : *Agalya*
+Case : *Nephritic syndrome*
