@@ -4,7 +4,7 @@ Cases for Tomorrow
 
 *OP* case presentation
 Presenter : *GUNOTHAM RAJ*
-Case : *Acute Respiratory Infections*
+Case : *Ventricular Septal Defect*
 
 *Ward* case presentation
 Presenter : *Agalya*
