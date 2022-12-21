@@ -7,5 +7,5 @@ Presenter : *GUNOTHAM RAJ*
 Case : *Ventricular Septal Defect*
 
 *Ward* case presentation
-Presenter : *Agalya*
-Case : *Nephritic syndrome*
+Presenter : *DURAI*
+Case : *Acute Respiratory Infection*
