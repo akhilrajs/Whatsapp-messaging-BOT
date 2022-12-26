@@ -12,10 +12,7 @@ creates a log file for every run according to date and time .
 
 - host the message in a text file in GitHub
 ![6](https://user-images.githubusercontent.com/67222042/182764914-63ecf581-0db2-44e4-b01c-33bdc22af10b.png)
-
-
-- Copy the url for the raw data
-![7](https://user-images.githubusercontent.com/67222042/182764969-7bd82c15-e69f-4df4-8760-8dbcecfdab37.png)
+- Copy the url for the text file 
 
 
 - open the Folder
