@@ -1,6 +1,2 @@
 
-*ALERT*
-
-be cautious while taking leave in Ortho 
-1 day = *16.67 %* attendance in second round
-1 day = *6.25 %* attendance total ( first and second round )
+this is a test 
