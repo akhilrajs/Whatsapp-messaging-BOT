@@ -1,28 +1,106 @@
 # Whatsapp-messaging-BOT
 A bot based on python compiled to a executable file for all Windows systems to send messages in bulk to recipients whose numbers need not be saved in your phone. 
 
-Supports :
-1) **Google Chrome**
-2) **Mozilla Firefox**
-3) **MIcrosoft Edge**
+## Supports :
+~~~
+1) Google Chrome
+2) Mozilla Firefox
+3) MIcrosoft Edge
+~~~
+## Requirements ( copy and install ) : 
+~~~
+pip install selenium 4.3.0
+pip install webdriver-manager 3.4.2
+pip install DateTime 4.3
+pip install prettytable 2.1.0
+pip install requests 2.28.1
+pip install bs4
+pip install art 5.8
+pip install clear-screen 0.1.14
+~~~
+## File structure :
+The file structure after installation of **Whatsapp Bot.exe** file in installation folder in this repo will be :
+| File | Description |
+| --- | --- |
+| `Whatsapp BOT.exe` | Open this after filling the message, name list and number list |
+| `names.txt` | contains the **name** of the **recipients** |
+| `numbers.txt` | contains the **whatsapp numbers** of the **recipients** |
+| `msg_url.txt` | contains the url of the page containing your message in Github, eg : https://github.com/akhilrajs/Whatsapp-messaging-BOT/blob/main/message.txt |
+| `log_data` | contains a log of the program excecution from start to end arranged according to date and time  |
+## log file Structure
+```mermaid
+graph TD;
+    log_data-->date;
+    log_data-->2022-08-19;
+    date-->time.txt;
+    2022-08-19-->08_18_17.txt;
+```
+a sample log_file:
+<details><summary>click here to open</summary>
+<p>
 
-creates a log file for every run according to date and time .
 
-# Steps to use 
+```[#] time : 13_33_19
+[#] reading msg_url file 
+[#] downloading message from GITHUB 
+[#] message downloaded 
+[#] downloading xpaths 
+[#] xpath for click_btn created 
+[#] downloaded xpath for menu 
+[#] printing message 
+[#] message : 
+this is a test 
+ 
+[#] reading numbers from numbers.txt 
+[#] numbers loaded from numbers.txt 
+[#] reading names from names.txt 
+[#] names loaded from names.txt 
+[#] ['akhil']
+[#] ['9999999999']
+[#] total numbers loaded : 2 
+[#] greet : Good Afternoon  
+[#] accepting country code 
+[#] country code : +91 accepted 
+[#] loading options for Google Chrome 
+[#] opening Google Chrome 
+[#] logging into Whatsapp 
+[#] logged in 
+[#] sending message to : 9999999999 
+[#] message sent to : 9999999999 Akhil 
+++
+||
+++
+++
+[#] time : 13_34_12
+[#] program runtime : 93
+[#] END PROGRAM 
 
-- host the message in a text file in GitHub
-![6](https://user-images.githubusercontent.com/67222042/182764914-63ecf581-0db2-44e4-b01c-33bdc22af10b.png)
-- Copy the url for the text file 
+```
+
+</p>
+</details>
+
+## How to setup message, name list and number list :
+###### Setting up the message:
+> 1) Open up a text file in a Github repo
+> 2) Type your message and commit changes 
+> 3) Copy the link of the file and paste it in the msg_url.txt file . eg : https://github.com/akhilrajs/Whatsapp-messaging-BOT/blob/main/message.txt
+
+###### Setting up the name aand number list :
+> 1) Copy the list of names and paste it in the file names.txt
+> 2) Copy the list of numbers and paste it in the file numbers.txt
+
+## How to send messages :
+> 1) After setting up the above files open Whatsapp BOT.exe 
+> 2) if not logged in Log into whatsapp web 
+> 3) Sit back and let the program do the rest
+
+## A sample video of the BOT sending a message to me :
+
+> ![whatsapp bot runtime - Made with Clipchamp](https://user-images.githubusercontent.com/67222042/210165458-57b95a93-594d-42ca-9474-493e1a759bb2.gif)
 
 
-- open the Folder
-![3](https://user-images.githubusercontent.com/67222042/182763987-fffd56d9-65d1-4435-ae38-33cc28389e51.png)
+## Get in touch with me 
+> @ Instagram : [akhil_raj_s_](https://www.instagram.com/akhil_raj_s_/)
 
-- open the names.txt file and paste the list of names
-![4](https://user-images.githubusercontent.com/67222042/182764055-1f6c2c9e-f966-4402-9699-beb7ab52d08b.png)
-
-- open the numbers.txt file and paste the list of numbers
-![5](https://user-images.githubusercontent.com/67222042/182764102-3a712c33-3712-4444-8183-c84857160945.png)
-
-- open the WhatsappBot.exe file and viola 
-![Pr Cut-1](https://user-images.githubusercontent.com/67222042/182764686-6cdbc69e-07bf-431d-99c8-bfe23d5ef728.gif)
+> @ Whatsapp : [Akhil Raj S](https://tinyurl.com/akhilrajsWhatsapp)
