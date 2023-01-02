@@ -1,13 +1,21 @@
 # Whatsapp-messaging-BOT
 A bot based on python compiled to a executable file for all Windows systems to send messages in bulk to recipients whose numbers need not be saved in your phone. 
 
-## Supports :
+## Contents :
+- [Supports](#supports)
+- [Requrements](#requirements)
+- [File Structure](#file-structure)
+- [log file Structure](#log-file-structure)
+- [Contact me](#get-in-touch-with-me)
+- [How to use ?](#how-to-setup-message-name-list-and-number-list)
+
+## Supports
 ~~~
 1) Google Chrome
 2) Mozilla Firefox
 3) MIcrosoft Edge
 ~~~
-## Requirements ( copy and install ) : 
+## Requirements 
 ~~~
 pip install selenium 4.3.0
 pip install webdriver-manager 3.4.2
@@ -18,7 +26,7 @@ pip install bs4
 pip install art 5.8
 pip install clear-screen 0.1.14
 ~~~
-## File structure :
+## File structure
 The file structure after installation of **Whatsapp Bot.exe** file in installation folder in this repo will be :
 | File | Description |
 | --- | --- |
@@ -80,7 +88,7 @@ this is a test
 </p>
 </details>
 
-## How to setup message, name list and number list :
+## How to setup message name list and number list
 ###### Setting up the message:
 > 1) Open up a text file in a Github repo
 > 2) Type your message and commit changes 
