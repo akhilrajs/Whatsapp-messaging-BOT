@@ -1,4 +1,11 @@
 # Whatsapp-messaging-BOT
+## Version : 2.1.1 
+> ## Updates : 
+> 1) Allows the user to decide whether they want to greet the recipients  or not 
+> 2) Reduced crashing incidences by using loops to avoid invalid arguments by user
+> 3) Checks the validity of the country code provided by the user
+
+
 A bot based on python compiled to a executable file for all Windows systems to send messages in bulk to recipients whose numbers need not be saved in your phone. 
 
 ## Contents :
@@ -8,6 +15,7 @@ A bot based on python compiled to a executable file for all Windows systems to s
 - [log file Structure](#log-file-structure)
 - [Contact me](#get-in-touch-with-me)
 - [How to use ?](#how-to-setup-message-name-list-and-number-list)
+- [Old Version Details](#history)
 
 ## Supports
 ~~~
@@ -48,7 +56,7 @@ a sample log_file:
 <p>
 
 
-```[#] time : 13_33_19
+```[#] time : 22_47_21
 [#] reading msg_url file 
 [#] downloading message from GITHUB 
 [#] message downloaded 
@@ -57,6 +65,7 @@ a sample log_file:
 [#] downloaded xpath for menu 
 [#] printing message 
 [#] message : 
+
 this is a test 
  
 [#] reading numbers from numbers.txt 
@@ -65,8 +74,12 @@ this is a test
 [#] names loaded from names.txt 
 [#] ['akhil']
 [#] ['9999999999']
-[#] total numbers loaded : 2 
-[#] greet : Good Afternoon  
+[#] total numbers loaded : 1 
+[#] asking user if they want to greet the recipient 
+[#] user entered invalid response to y/n question
+[#] asking user again for greet
+[#] user wants to greet the recipient
+[#] greet : Good Evening  
 [#] accepting country code 
 [#] country code : +91 accepted 
 [#] loading options for Google Chrome 
@@ -79,8 +92,8 @@ this is a test
 ||
 ++
 ++
-[#] time : 13_34_12
-[#] program runtime : 93
+[#] time : 22_48_01
+[#] program runtime : 1.33 minutes
 [#] END PROGRAM 
 
 ```
@@ -112,3 +125,12 @@ this is a test
 > @ Instagram : [akhil_raj_s_](https://www.instagram.com/akhil_raj_s_/)
 
 > @ Whatsapp : [Akhil Raj S](https://tinyurl.com/akhilrajsWhatsapp)
+
+
+# History
+## Version : 2.1.1
+> ## Updates :
+> 1) The whatsapp Bot splash screen text changes ASCII art style everytime user opens it 
+> 2) Better error handling
+> 3) Bot recording start and end time and shows the duration of the program excecution
+> 4) Bug fixes regarding the Creation of the log_files
