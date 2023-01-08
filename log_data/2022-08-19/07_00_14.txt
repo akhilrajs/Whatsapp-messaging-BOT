@@ -1,4 +1,4 @@
-[#] time : 08_18_17
+[#] time : 07_00_14
 [#] reading msg_url file 
 [#] downloading message from GITHUB 
 [#] message downloaded 
@@ -8,13 +8,17 @@
 [#] printing message 
 [#] message : 
 
+this is a test 
+ 
 [#] reading numbers from numbers.txt 
-[#] numbers loaded from numbers.txt 
 [#] numbers loaded from numbers.txt 
 [#] reading names from names.txt 
 [#] names loaded from names.txt 
-[#] names loaded from names.txt 
-[#] total numbers loaded : 2 
+[#] ['akhil']
+[#] ['9999999999']
+[#] total numbers loaded : 1 
+[#] asking user if they want to greet the recipient 
+[#] user wants to greet the recipient
 [#] greet : Good Morning  
 [#] accepting country code 
 [#] country code : +91 accepted 
@@ -22,12 +26,12 @@
 [#] opening Google Chrome 
 [#] logging into Whatsapp 
 [#] logged in 
-[#] sending message to : 
-[#] message sent to :  
-[#] sending message to :  
-[#] message sent to :  
+[#] sending message to : 9999999999 
+[#] message sent to : 9999999999 Akhil 
 ++
 ||
 ++
 ++
+[#] time : 07_01_18
+[#] program runtime : 1.73 minutes
 [#] END PROGRAM 
