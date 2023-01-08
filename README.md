@@ -128,7 +128,7 @@ this is a test
 
 
 # History
-## Version : 2.1.1
+## Version : 2.1.0
 > ## Updates :
 > 1) The whatsapp Bot splash screen text changes ASCII art style everytime user opens it 
 > 2) Better error handling
