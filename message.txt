@@ -1,5 +1,8 @@
 
 
-hi folks 
-this is khil speaking 
-this is a test 
+*Exam Timetable*
+
+*24*/01/2023 ( *Tuesday* )
+*15*/01/2023 ( *Sunday* )
+*16*/01/2023 ( *Monday* )
+*17*/01/2023 ( *Tuesday* )
