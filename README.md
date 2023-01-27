@@ -24,7 +24,7 @@ A bot based on python compiled to a executable file for all Windows systems to s
 3) MIcrosoft Edge
 ~~~
 ## Requirements 
-~~~
+```python
 pip install selenium 4.3.0
 pip install webdriver-manager 3.4.2
 pip install DateTime 4.3
@@ -33,7 +33,7 @@ pip install requests 2.28.1
 pip install bs4
 pip install art 5.8
 pip install clear-screen 0.1.14
-~~~
+```
 ## File structure
 The file structure after installation of **Whatsapp Bot.exe** file in installation folder in this repo will be :
 | File | Description |
