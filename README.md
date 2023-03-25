@@ -2,7 +2,7 @@
 
 
 A bot based on python compiled to a executable file for all Windows systems to send messages in bulk to recipients whose numbers need not be saved in your phone. 
-## Version : 2.1.0
+## Version : 2.1.3
 > ## Updates :
 > 1) The msg_url.txt file may contain either the message text or the URL of the GitHub page containing the message.
 ## Contents :
