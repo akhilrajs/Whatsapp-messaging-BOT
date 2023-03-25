@@ -2,19 +2,9 @@
 
 
 A bot based on python compiled to a executable file for all Windows systems to send messages in bulk to recipients whose numbers need not be saved in your phone. 
-## Version : 2.1.2
-> ## Updates : 
-> 1) bug - if user doesnt want to greet the recipent, it  starts the message by user name without Good Moring/Afternoon/Evening 
->    fix - name no longer appears if the user doesnt choose to greet the recipient
-```python
-if greet_boolean == False :
-            name = ""
-        else : 
-            name = names[idx].title()
-msg = greet + name + '''
-        
-        ''' + str(message) 
-```
+## Version : 2.1.0
+> ## Updates :
+> 1) The msg_url.txt file may contain either the message text or the URL of the GitHub page containing the message.
 ## Contents :
 - [Supports](#supports)
 - [Requrements](#requirements)
@@ -148,3 +138,16 @@ this is a test
 > 2) Reduced crashing incidences by using loops to avoid invalid arguments by user
 > 3) Checks the validity of the country code provided by the user
 
+## Version : 2.1.2
+> ## Updates : 
+> 1) bug - if user doesnt want to greet the recipent, it  starts the message by user name without Good Moring/Afternoon/Evening 
+>    fix - name no longer appears if the user doesnt choose to greet the recipient
+```python
+if greet_boolean == False :
+            name = ""
+        else : 
+            name = names[idx].title()
+msg = greet + name + '''
+        
+        ''' + str(message) 
+```
