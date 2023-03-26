@@ -1,10 +1,14 @@
 # Whatsapp-messaging-BOT
 
 
-A bot based on python compiled to a executable file for all Windows systems to send messages in bulk to recipients whose numbers need not be saved in your phone. 
+This Python-based bot has been compiled into an executable file that works on all Windows systems. It enables the user to send bulk Whatsapp messages to recipients without the need to save their phone numbers in their phone.
 ## Version : 2.1.3
 > ## Updates :
 > 1) The msg_url.txt file may contain either the message text or the URL of the GitHub page containing the message.
+## Version : 3.1.0 ( under development )
+> ## upcoming Updates :
+> 1) introducing GUI : 
+> <img src="https://user-images.githubusercontent.com/67222042/227753375-9b132808-533d-4ba7-b76b-39689cf004d3.png" alt="image" width="800"/>
 ## Contents :
 - [Supports](#supports)
 - [Requrements](#requirements)
