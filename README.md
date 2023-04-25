@@ -2,9 +2,11 @@
 
 
 This Python-based bot has been compiled into an executable file that works on all Windows systems. It enables the user to send bulk Whatsapp messages to recipients without the need to save their phone numbers in their phone.
-## Version : 2.1.3
+## Version : 2.1.4
 > ## Updates :
-> 1) The msg_url.txt file may contain either the message text or the URL of the GitHub page containing the message.
+> 1) The program displays a progress bar and sends messages when the time is reached without user-set timers.
+> # Note : The user needs to log in once to save WhatsApp login and doesn’t need to log in again after the timer hits zero.
+> this issue will be resolved in version 2.1.5
 ## Version : 3.1.0 ( under development )
 > ## upcoming Updates :
 > 1) introducing GUI : 
@@ -155,3 +157,7 @@ msg = greet + name + '''
         
         ''' + str(message) 
 ```
+
+## Version : 2.1.3
+> ## Updates :
+> 1) The msg_url.txt file may contain either the message text or the URL of the GitHub page containing the message.
