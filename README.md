@@ -6,10 +6,7 @@ This Python-based bot has been compiled into an executable file that works on al
 > ## Updates :
 > 1) The program displays a progress bar and sends messages when the time is reached without user-set timers.
 > 2) Some bugs fixed from 2.1.4
-## Version : 3.1.0 ( under development )
-> ## upcoming Updates :
-> 1) introducing GUI : 
-> <img src="https://user-images.githubusercontent.com/67222042/227753375-9b132808-533d-4ba7-b76b-39689cf004d3.png" alt="image" width="800"/>
+
 ## Contents :
 - [Supports](#supports)
 - [Requrements](#requirements)
